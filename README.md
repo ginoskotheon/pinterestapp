@@ -34,4 +34,4 @@ App that mimics Pinterest.
 
 ##### View a live demo:
 
-https://bookappwm.herokuapp.com/
+http://macinterest.herokuapp.com/
