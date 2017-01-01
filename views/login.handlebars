@@ -1,0 +1,58 @@
+<div>
+	<div class="login">
+		<div id="flexcontainer">
+			<div id="loginnav">
+				<a class="loginnav" href='/'><i class="fa fa-arrow-left"></i><h3> Return to Gallery</h3></a>
+			</div>
+		</div>
+
+		<br />
+    <h1>Login</h1>
+    <div class="login">
+      <a href="/auth/twitter">
+      <div>
+        <p style="color: #fff; font-size: 24px">LOGIN WITH TWITTER  <i class="fa fa-twitter"></i></p>
+      </div>
+
+      </a>
+    </div>
+    <h2>or ... </h2>
+
+    <hr />
+		{{# if errors }}
+		<section class="errors">
+		 <ul>
+			{{#each errors }}
+			<li>
+				{{ this.msg }}
+			</li>
+			{{/each}}
+		 </ul>
+		</section>
+		{{/if}}
+
+      <form class="formLogin" method="POST">
+				<input id="token" type="hidden" name="_csrf" value={{csrfToken}} />
+        <div class="form-group">
+          <label for="email">
+          Email:</label>
+          <input type="text" class="form-control" id="email"
+            name="email">
+        </div> <!-- End of form-group -->
+        <div class="form-group">
+          <label for="password">
+          Password:</label>
+          <input type="password" class="form-control" id="password"
+            name="password">
+        </div> <!-- End of form-group -->
+
+
+        <button style="color: #333" type="submit" >Submit</button>
+      </form>
+	</div>
+	<hr />
+
+		<a id='menuButs' href="/register"><h3 class="bt"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i> Sign Up</h3></a>
+
+
+</div>

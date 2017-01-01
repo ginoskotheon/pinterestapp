@@ -1,0 +1,28 @@
+<div class="container">
+  <div id="flexing">
+    <h1>Welcome to MacInterest!</h1>
+    <a id='menuButs' href="/login"><div class="bt"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</div></a>
+  </div>
+  <h3 class="addpic" id="addpic">Add a picture</h3>
+  <div id="myModal" class="myModal">
+    <div id="myform">
+      <span class="close">&times;</span>
+      <div>
+        <h3>To add pictures please log in...  <a href="/login"><i class="fa fa-sign-in"></i></a></h3>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <div class="grid mygrid">
+    <div class="grid-sizer"></div>
+    {{#each data}}
+    <div class="grid-item">
+      <img src="{{this.url}}" />
+      <p class="text-center">{{this.title}}</p>
+    </div>
+    {{/each}}
+  </div>
+  <hr>
+
+</div>

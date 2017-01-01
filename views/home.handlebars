@@ -1,0 +1,42 @@
+<div class="container">
+  <div id="flexing">
+    <h1>Welcome to MacInterest!</h1>
+    <a id='mymacs' href='/mymacs'><h1>MY MACS</h1></a>
+  </div>
+
+  <h3 class="addpic" id="addpic">Add a picture</h3>
+  <div id="myModal" class="myModal">
+    <div id="myform">
+      <span class="close">&times;</span>
+      <form class="picform" method="POST" action="/newpic">
+        <input type="hidden" name="_csrf" value={{csrfToken}} />
+        <div class="form-group">
+          <label for="blah">Image Preview: </label>
+          <img id="blah" src='#' alt="image preview"/>
+        </div>
+        <div class="form-group">
+          <label for="src">Image Source: </label>
+          <input class="form-control" id="src" type="text" name="src"/>
+        </div>
+        <div class="form-group">
+          <label for="title">Image Title: </label>
+          <input class="form-control" id="title" type="text" name="title"/>
+        </div>
+
+        <button class="btn btn-default" id="sub" type="submit">Click Me!</button>
+      </form>
+    </div>
+  </div>
+  <hr>
+
+  <div class="grid mygrid">
+    <div class="grid-sizer"></div>
+    {{#each data}}
+    <div class="grid-item">
+      <img src="{{this.url}}" />
+      <p class="text-center">{{this.title}}</p>
+    </div>
+    {{/each}}
+  </div>
+  <a id='menuButs' href="/logout"><div class="bt"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</div></a>
+</div>

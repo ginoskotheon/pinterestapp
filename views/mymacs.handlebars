@@ -1,0 +1,19 @@
+<div>
+  <div id="flexing">
+    <h1>MyMacs</h1>
+    <a id='mymacs' href='/home'><h1>HOME</h1></a>
+  </div>
+  <hr>
+<div class="grid mygrid">
+  <div class="grid-sizer"></div>
+  <input id="token" type="hidden" name="_csrf" value={{csrfToken}} />
+  {{#each data}}
+    <div class="grid-item">
+      <div class="delete" id="delete">&times;</div>
+      <img class="theurl" src="{{this.url}}" />
+      <p class="text-center" id="thetitle">{{this.title}}</p>
+    </div>
+  {{/each}}
+</div>
+<a id='menuButs' href="/logout"><div class="bt"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</div></a>
+</div>

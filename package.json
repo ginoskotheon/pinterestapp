@@ -1,0 +1,30 @@
+{
+  "name": "macintrest",
+  "version": "1.0.0",
+  "description": "pintrest like app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "William McDonald",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.0",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "csurf": "^1.9.0",
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.14.2",
+    "express-twitter": "0.0.1",
+    "express-validator": "^3.1.2",
+    "flash": "^1.1.0",
+    "handlebars": "^4.0.6",
+    "hbs": "^4.0.1",
+    "mongoose": "^4.7.3",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4"
+  }
+}

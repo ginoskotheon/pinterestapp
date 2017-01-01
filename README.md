@@ -2,7 +2,7 @@
 ![alt macinterest](https://github.com/ginoskotheon/pinterestapp/blob/master/public/assets/img/books.jpg)
 ##### by William McDonald
 
-App that gives users a platform to trade their favorite books!
+App that mimics Pinterest. 
 
 ##### I learned
 
