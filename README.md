@@ -1,5 +1,5 @@
 #Pinterest Type APP
-![alt macinterest](https://github.com/ginoskotheon/pinterestapp/blob/master/public/assets/img/books.jpg)
+![alt macinterest](https://github.com/ginoskotheon/pinterestapp/blob/master/public/assets/img/pictures.jpg)
 ##### by William McDonald
 
 App that mimics Pinterest. 
