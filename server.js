@@ -17,7 +17,7 @@ require('dotenv').load();
 
 require('./config/passport')(passport);
 var LocalStrategy = require('passport-local').Strategy;
-mongoose.connect('localhost:27017/intrestapp');
+mongoose.connect(process.env.MONGO_URI);
 
 //View engine
 
